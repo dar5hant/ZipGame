@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Zip Path Puzzle</title>
+    <link rel="stylesheet" href="./src/ui/styles.css" />
+  </head>
+  <body>
+    <main id="app" class="panel">
+      <h1>Zip Path Puzzle</h1>
+      <div class="controls">
+        <input id="stageInput" type="number" min="1" value="1" />
+        <select id="difficultySelect">
+          <option value="EASY">EASY</option>
+          <option value="MEDIUM">MEDIUM</option>
+          <option value="HARD">HARD</option>
+        </select>
+        <button id="loadBtn">Load Stage</button>
+        <button id="nextBtn">Next Stage</button>
+        <button id="undoBtn">Undo</button>
+        <button id="hintBtn">Hint</button>
+        <button id="clearBtn">Clear</button>
+      </div>
+      <div class="info">
+        <span id="stageLabel"></span>
+        <span id="difficultyLabel"></span>
+      </div>
+      <p id="statusLabel"></p>
+      <section id="grid"></section>
+    </main>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
